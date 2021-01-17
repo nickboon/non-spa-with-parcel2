@@ -6,8 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch.index": "parcel watch src/js/index/getContent.js --out-dir js/index/",
-    "watch.about": "parcel wtch src/js/about/getContent.js --out-dir js/about/",
-    "dev": "npm-run-all --parallel watch.*"
+    "watch.about": "parcel watch src/js/about/getContent.js --out-dir js/about/",
+    "dev": "npm-run-all --parallel watch.*",
+    "build.index": "parcel build src/js/index/getContent.js --out-dir js/index/",
+    "build.about": "parcel build src/js/about/getContent.js --out-dir js/about/",
+    "build": "npm-run-all build.*"
   },
   "keywords": [],
   "author": "Nick Boon",
