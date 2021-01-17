@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch.index": "parcel watch src/js/index/getContent.js --out-dir js/index/",
+    "watch.about": "parcel wtch src/js/about/getContent.js --out-dir js/about/",
+    "dev": "npm-run-all --parallel watch.*"
   },
   "keywords": [],
   "author": "Nick Boon",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4"
+  }
 }
